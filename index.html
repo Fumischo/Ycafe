@@ -3,20 +3,49 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=with-device-width">
+  <meta name="viewport" content="width=device-width">
   <title>YAMACAFE ヤマカフェ</title>
 
-  <!-- <link href="https://fonts.googleapis.com/css?family=Monsterrat:700&display=swap" rel="style.css"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monsterrat:700&display=swap" rel="style.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="style.css">
 
   <link rel="icon" href="img/favicon.png" type="img/png">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="img/favicon.png" type="img/png">
 </head>
 
 <body>
+  <header class="header">
+    <div class="site">
+      <img src="img/yamacafe-w.svg" alt="YAMACAFE ヤマカフェ">
+    </div>
 
+    <nav class="nav">
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">こだわりメニュー</a></li>
+        <li><a href="#">お知らせ</a></li>
+        <li><a href="#">営業時間</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class="nav-button" onClick="navFunc()">
+      <!-- スクリーンリーダー用テキスト -->
+      <span class="sr-only">MENU</span>
+    </button>
+
+  </header>
+  <div class="hero">
+    <h1>
+      <img src="img/catch.svg" alt="Take A Break">
+    </h1>
+  </div>
+
+  <script>
+    function navFunc() {
+      document.querySelector('html').classList.toggle('open');
+    }
+  </script>
 </body>
 
 </html>
